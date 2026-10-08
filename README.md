@@ -7,10 +7,9 @@ Flutter calculator: core four-operation flow + graduate pathway.
 ## Setup
 
 ```bash
-flutter create calculator_app          # skip if you already have the project
+flutter create calculator_app          
 cd calculator_app
-# copy lib/ and test/ from this folder over the generated ones
-rm -f test/widget_test.dart            # the default test references MyApp
+rm -f test/widget_test.dart            
 flutter pub get
 flutter run
 ```
@@ -25,7 +24,6 @@ flutter test
 
 ```bash
 flutter build apk
-# build/app/outputs/flutter-apk/app-release.apk -> rename to YourName_CalculatorApp.apk
 ```
 
 ## Structure
@@ -33,7 +31,7 @@ flutter build apk
 | File | Role |
 |---|---|
 | `lib/calculator_engine.dart` | All logic and state (no Flutter imports): input, operators, chaining, errors, history |
-| `lib/main.dart` | UI only: display, button grid, history sheet, accessibility semantics |
+| `lib/main.dart` | UI only |
 | `test/calculator_test.dart` | Unit tests for the engine + two widget tests |
 
 ## Behavior notes
