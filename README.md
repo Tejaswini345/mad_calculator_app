@@ -20,7 +20,7 @@ flutter run
 flutter test
 ```
 
-## Build the APK (deliverable 02)
+## APK File
 
 ```bash
 flutter build apk
